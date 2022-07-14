@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 var userSchema = new Schema({
-  full_name: {
+  fullName: {
     type: String,
     required: true
   },
@@ -10,7 +10,7 @@ var userSchema = new Schema({
     type: String,
     required: true
   },
-  phone_number: {
+  phoneNumber: {
     type: String,
     required: true
   },

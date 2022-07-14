@@ -20,9 +20,9 @@ const authControllers = {
     const hash = await bcrypt.hash(req.body.password, salt_rounds);
 
     var create_user = {
-      full_name: req.body.full_name,
+      fullName: req.body.fullName,
       email: req.body.email.toLowerCase(),
-      phone_number: req.body.phone_number,
+      phoneNumber: req.body.phoneNumber,
       password: hash,
     }
 
@@ -93,8 +93,8 @@ const authControllers = {
 
       const payload = {
         email: user.email,
-        full_name: user.full_name,
-        phone_number: user.full_name,
+        fullName: user.fullName,
+        phoneNumber: user.fullName,
         token,
         id: user._id
       }
